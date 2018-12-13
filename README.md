@@ -21,6 +21,9 @@ This project is using json data about each venue, for example, city,latitude/lon
 ,category,attributes. I built 4 models based on each data and a linear regression
 model based on the outputs of the previous models.
 
-Specifically, I created my own classes to capture the data, transform them to a list of
-dictionaries.This way sklearn dictvectorizer will come in handy. Then pipeline method is used
+Specifically, for each model I created my own classes to capture the data, transform them to a list of
+dictionaries.This way sklearn dictvectorizer will come in handy. Then a pipeline is used
 to train and predict.
+
+I used FeatureUnion to include the four models output. when fit() is called, the featureunion will train
+and predict. We can end up with 4 features and then put them into a linear regression model.
