@@ -36,3 +36,7 @@ using MRjob.
 ## Stack Overflow data analysis using Spark
 Stack Overflow is a collaboratively edited question-and-answer site focused on programming topics. It includes feedbacks metrics which
 allows us run analysis of user behavior. I used PySpark to perform data manipulation, analysis and machine learning on unstructured XML data. Spark is faster version of hadoop that runs on top of HDFS with the ability to cache. I clean the data and created RDD for posts, users, votes. Then the upvote percentage, answer percentage, post counts, quick answers, veteran users, brief users are computetd. I also use word2vec from sparkML to find the close synonyms of certain words. Finally I'd like to see the tags of a quesiton from its text. Technically this is a multi-label classification probelm. But to simplify I trained k binary classifiers using logistic regression where the labels indicate the presence or absence of that tag, then the top k most common tags are chosen for that question.
+
+## nlp: Analyzing yelp review data
+
+This project is to build models to predict star ratings from Yelp review text. Word tokenization, tf-idf, lemmatization are used by Spacy.
