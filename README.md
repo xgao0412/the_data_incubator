@@ -27,3 +27,8 @@ to train and predict.
 
 I used FeatureUnion to include the four models output. when fit() is called, the featureunion will train
 and predict. We can end up with 4 features and then put them into a linear regression model.
+
+## Analyze wikipedia data using MRjob
+This project is using MRjob Python package to perform Mapreduce jobs on Wikipedia data. The data was stored in HDFS
+and parsed using lxml.etree. Then the top 100 most frequent words, link statistics, top linked by doublelinks are computed
+using MRjob.
