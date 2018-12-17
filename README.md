@@ -39,4 +39,4 @@ allows us run analysis of user behavior. I used PySpark to perform data manipula
 
 ## nlp: Analyzing yelp review data
 
-This project is to build models to predict star ratings from Yelp review text. Word tokenization, tf-idf, lemmatization are used by Spacy.
+This project is to build models to predict star ratings from Yelp review text. Word tokenization, tf-idf, lemmatization are used by Spacy. Truncatedsvd is also applied becasue the bigram model creates many features and it can be used for feature reduction for sparse matrix.
